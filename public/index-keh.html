@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StreetWise | Pinned Report Page</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/styleC.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/fefb8214e6.css" media="all" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="cyan darken-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">StreetWise</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="homePage"><a href="#"><i class="material-icons">home</i></a></li>
+        <li class="reportPage"><a href="#"><i class="material-icons">report</i></a></li>
+        <li class="incidentPage"><a href="#"><i class="material-icons">location_on</i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+    <div class="container">
+      <h1 class="header center col s12 blue-grey-text">View. Report. Get StreetWise.</h1>
+
+<!--    Placeholder map. Will show incidinets in your area.-->      
+ <div id="map"></div>
+
+            <br><br>
+      <div class="wrap">
+      <div class="row center">
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1">Report Incident</a>
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1">View Incidents</a>
+      </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+      <h5 class="header center col s12 black-text">Everyone deserves to feel safe in their city.</h5>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center cyan-text"><i class="material-icons">report</i></h2>
+            <h5 class="center">Report all street harassment</h5>
+
+            <p class="light">Do you feel unsafe when you’re walking through these streets? When you feel that you’ve been harassed, do you feel that there is nowhere to go to let others know what happened? StreetWise allows you to let your voice be heard. When you report an incident, StreetWise marks the spot where the violation occurred. Report an incident so that others can be more aware of their surroundings. Help yourself and others get StreetWise.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center cyan-text"><i class="material-icons">location_on</i></h2>
+            <h5 class="center">View incidents in your area</h5>
+
+            <p class="light">You can view all of the incidents in an area so that you’ll be more aware of the hot spots. Armed with this information, you can decide if you want to avoid an area or continue on your way. You’re becoming StreetWise.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+      <footer class="page-footer cyan darken-1">
+        <div class="container footer-area">
+            <!-- contact -->
+            <div class="row">
+                <h5>Connect with StreetWise:</h5>
+                <div class="col s12 contactArea">
+                    <a href="#"><i class="contact-icons fa fa-envelope-o" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact-icons fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact-icons fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact-icons fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+      <div class="container center cyan-text text-darken-4">
+      All rights reserved by StreetWise 2017
+      </div>
+    </div>
+    </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <!-- <script src="js/init.js"></script> -->
+  <!-- <script src="https://use.fontawesome.com/0dc977594a.js"></script> -->
+  <script>
+
+      function initMap() {
+        var myLatLng = {lat: 40.7280556, lng: -74.0780556};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hardcode'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0PrStRxe3h9hhyYl9V0bZ1vxNrKbpiOo&callback=initMap">
+    </script>
+    <script src="https://use.fontawesome.com/fefb8214e6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>

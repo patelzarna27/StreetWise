@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StreetWise | Home</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/styleC.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/fefb8214e6.css" media="all" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Asap+Condensed|Inconsolata|Nunito+Sans:300i|Rasa|Special+Elite" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./style/images/icon.png">
+</head>
+
+<body>
+    <nav class="cyan darken-1" role="navigation">
+        <div class="nav-wrapper container"><img src="./style/images/colors400.png" alt="private-eye logo" id="logo"><a id="logo-container" href="index.html" class="brand-logo">StreetWise</a>
+            <ul class="right hide-on-med-and-down">
+                <li class="homePage"><a href="/"><i class="material-icons">home</i></a></li>
+                <li class="reportPage"><a href="/reportincident"><i class="material-icons">report</i></a></li>
+                <li class="incidentPage"><a href="/viewincidents"><i class="material-icons">location_on</i></a></li>
+            </ul>
+           <!--  <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul> -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <!--    <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/reportIncident">Report Incident</a></li>
+                <li><a href="/viewincidents">View Incidents</a></li>
+            </ul> -->
+            <ul class="side-nav" id="mobile-demo">
+                 <li><a href="/">Home</a></li>
+                <li><a href="/reportIncident">Report Incident</a></li>
+                <li><a href="/viewincidents">View Incidents</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="header center col s12 blue-grey-text">View. Report. Get StreetWise.</h1>
+        <!--    Map placeholder. Map is being loaded from logic.js-->
+        <div id="map"></div>
+        <div class="wrap">
+            <div class="row center">
+                <a href="/reportincident" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1">Report Incident</a>
+                <a href="/viewincidents" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1">View Incidents</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container aboutText">
+        <div class="section">
+            <!--   Icon Section   -->
+            <div class="row">
+                <h5 class="header center col s12 black-text">Everyone deserves to feel safe in their city.</h5>
+                <div class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center cyan-text"><i class="material-icons">report</i></h2>
+                        <h5 class="center">Report all street harassment</h5>
+                        <p class="light"> StreetWise is an online community where you can share your street harassment experiences. Your report will inform others in your city of areas to avoid. Help yourself and others get StreetWise.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center cyan-text"><i class="material-icons">location_on</i></h2>
+                        <h5 class="center">View incidents in your area</h5>
+                        <p class="light">StreetWise provides you with all street harassment incidents submitted by users. You can use this information to become more aware of unsafe areas in your city and plan your routes accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <footer class="page-footer cyan darken-1">
+        <div class="container footer-area">
+            <!-- contact -->
+            <div class="row">
+                <h5>Connect with StreetWise:</h5>
+                <div class="col s12 contactArea">
+                    <a href="#"><i class="contact-icons fa fa-envelope-o" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact-icons fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact-icons fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact-icons fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center cyan-text text-darken-4">
+                All rights reserved by StreetWise 2017
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0PrStRxe3h9hhyYl9V0bZ1vxNrKbpiOo">
+    </script>
+    <script src="https://use.fontawesome.com/fefb8214e6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/logic.js"></script>
+</body>
+<script type="text/javascript">
+$(".button-collapse").sideNav();
+</script>
+
+</html>

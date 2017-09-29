@@ -1,0 +1,139 @@
+/* GENERAL styling */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+.main {
+    /*overflow: scroll;*/
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 100px;
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+/* report form styling */
+
+form {
+    border-style: solid;
+    border-width: medium;
+    margin-bottom: 30px;
+    height: 100%;
+    display: none;
+}
+
+#formInstructions {
+    border-style: solid;
+    border-width: medium;
+    margin-bottom: 30px;
+    height: 100%;
+    width: 75%;
+}
+
+#location_input {
+    display: block;
+    color: black;
+}
+
+
+
+/* navbar styling */
+
+nav {
+    background-color: #66ccff;
+    height: 100px;
+}
+
+.nav-wrapper {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form-buttons {
+    align-items: center;
+}
+
+
+
+
+/*incidents page styling */
+
+#incidentsdiv {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/* footer styling */
+
+.page-footer {
+    background-color: #66ccff;
+    width: 100%;
+    bottom: 0;
+    padding-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    position: relative;
+    height: 200px;
+    margin-top: -150px;
+}
+
+.container.footer-area {
+    text-align: center;
+    height: 100%;
+}
+
+.contactArea {
+    font-size: 60px;
+}
+
+.contact-icons {
+    margin: 10px;
+    color: black;
+}
+
+.contact-icons:hover {
+    opacity: 1;
+    color: white;
+}
+
+.phone {
+    font-size: 25px;
+    color: black;
+    opacity: .7;
+    margin: 5px;
+}
+
+.phone:hover {
+    opacity: 1;
+    color: white;
+}
+
+#googlemaps {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+#currentLocMap {
+    height: 400px;
+    width: 100%;
+    display: block;
+    border: 2px solid grey;
+    background: url('../images/loading.gif');
+    background-position: center;
+    background-repeat:no-repeat;;
+}
